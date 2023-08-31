@@ -14,39 +14,56 @@
 
   <!-- ======= Header ======= -->
   
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-      <nav class="navbar  w-100 navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>          
+  <header id="header" class="h-100">
+    <div class="container-fluid h-100 d-flex justify-content-center">
+      <div class="row header-row">
+        <div class="col">
+          <nav class="navbar w-100 navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              Bootstrap
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav" >                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">O firmie </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Realizacje</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kontakt</a>
+                </li>                
+              </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  szukaj
+                </a>
+                <div class="dropdown-menu">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </li>   
+            </div>
+          </nav> 
         </div>
-      </nav>
+      </div>      
     </div>
   </header>
   <!-- End Header -->
@@ -54,34 +71,41 @@
     <!-- ======= Carousel Section ======= -->
 
       <section id="carousel" class="d-flex align-items-center">
-        <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col col-lg-6">
-                  <p>Nowoczesna aranżacja
-                    Twojego ogrodu </p>
-                    <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-                    <div>
-                      <button class="btn btn-success">Skontaktuj się z nami</button>
-                      <button class="btn btn-outline-success ">Zobacz nasze realizacje</button>
-                    </div>
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col px-0">
+              <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active h-100">
+                    <div class="row h-100">
+                      <div class="col col-lg-6 px-0 h-100">
+                        <p>Nowoczesna aranżacja
+                          Twojego ogrodu </p>
+                          <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                          <div>
+                            <button class="btn btn-success">Skontaktuj się z nami</button>
+                            <button class="btn btn-outline-success ">Zobacz nasze realizacje</button>
+                          </div>
+                      </div>
+                      <div class="col col-lg-6 px-0 h-100">
+                        <img class="d-block w-100" src="https://placehold.co/400" alt="First slide">
+                      </div>
+                    </div>           
+                  </div>        
                 </div>
-                <div class="col col-lg-6">
-                  <img class="d-block w-100" src="https://placehold.co/400" alt="First slide">
-                </div>
-              </div>           
-            </div>        
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>   
+            </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>   
+        </div>
+        
       </section> <!-- End Carousel -->
 
   <main id="main">
@@ -89,7 +113,44 @@
     <!-- ======= Service Section ======= -->
 
       <section id="service" class="d-flex align-items-center">
-        oferta
+        <div class="container-fluid h-100">
+          <div class="row">
+            <div class="col">
+              <span>oferta</span>
+              <p>Działamy kompleksowo</p>
+              <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col w-100 d-flex justify-content-around ">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Projekty</h5>
+                  <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                  <a href="#" class="btn btn-primary">Dowiedz się więcej</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Wizualizacje</h5>
+                  <p class="card-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                  <a href="#" class="btn btn-primary">Dowiedz się więcej</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Realizacje</h5>
+                  <p class="card-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                  <a href="#" class="btn btn-primary">Zobacz nasze realizacje</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
       </section> <!-- End Service -->
       
      <!-- ======= About Section ======= -->
@@ -98,9 +159,9 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 bg-warning p-0 m-0" >
-              <img src="https://placehold.co/688x720" alt="" class="w-100"/>
+              <img src="https://placehold.co/688x720" alt="" class="w-100 h-100"/>
             </div>
-            <div class="col-lg-6 bg-danger">
+            <div class="col-lg-6 p-0 m-0">
               <span>O firmie</span>
               <p>Tworzymy z pasją</p>
               <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
@@ -112,13 +173,23 @@
     <!-- ======= Portfolio Section ======= -->
 
       <section id="portfolio" class="d-flex align-items-center">
-        portfolio
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col">
+              <span>Realizacje</span>
+              <p>Nasze projekty</p>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col">galeria</div>
+          </div>
+        </div>
       </section><!-- End Portfolio -->  
 
      <!-- ======= Instagram Section ======= -->
 
       <section id="instagram" class="d-flex" >
-      <div class="container-fluid d-flex justify-content-center align-items-center w-100 bg-black" style="height: 478px;">
+      <div class="container-fluid d-flex justify-content-center align-items-center w-100 " style="height: 478px;">
         <div class="row" style="height: 358px; width: 1040px;  background-color: var(--color-green);">
           <div class="col col-lg-6 "><p>Zostańmy w kontakcie! Znajdziesz nas na Instagramie.</p></div>
           <div class="col col-lg-6 "><p>Śledź nasze najnowsze realizacje!</p><button class="btn btn-outline-info">Instagram</button></div>  
@@ -130,9 +201,41 @@
     <!-- ======= Footer Section ======= -->
 
   <footer id="footer" class="d-flex align-items-center">
-    footer
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col">
+          <div class="row">
+            <div class="col">image</div>
+            <div class="col d-flex">
+              <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+              <button class="btn btn-success">Skontaktuj się z nami</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col border border-bottom-0" ></div>
+          </div>
+          <div class="row">
+            <div class="col d-flex">
+              <p>Kontakt</p>
+              <p>Instagram</p>
+              <p>Facebook</p>
+              <p>LinkedIn</p>
+            </div>
+            <div class="col d-flex">
+              <p>000-000-000</p>
+              <p>giarddesign@kontakt.pl</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">Prawa zastrzeżone © 2022</div>
+            <div class="col">made by</div>
+          </div>
+        </div>
+      </div>
+    </div>    
   </footer> <!-- End Footer -->  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

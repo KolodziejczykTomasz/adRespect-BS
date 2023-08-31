@@ -82,5 +82,42 @@ a {
   color: inherit;
 }
 
+.col {
+  border: 2px solid red;  
+}
+
+.row {
+  border: 4px solid rgb(0, 30, 255);
+}
+
+.container, .container-fluid{
+  border: 6px solid green;
+}
 
 
+#header {
+  height: 72px;
+}
+
+.header-row{
+  width: 1262px;
+}
+
+#carousel {
+  height: 737px;
+}
+#service {
+  height: 939px;
+}
+#about {
+  height: 720px;
+}
+#portfolio {
+  height: 1824px;
+}
+#instagram {
+  height: 478px;
+}
+#footer {
+  height: 499px;
+}
