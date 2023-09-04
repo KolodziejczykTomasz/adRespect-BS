@@ -11,10 +11,8 @@ Templanet nettom24 CSS Framework
   --color-white: 255,255,255;
   --color-green: #1B5B31;
   --color-light-grey: #F5F0EC;
-  --color-link-normal: 201,91,40;
-  --color-link-hover: 153,69,31;
-  --color-link-active: 153,69,31;
-  --color-link-focus: 153,69,31;
+  --color-grey:#F5F0EC;
+  --color-beige: #DCC1AB;  
   --font-family-inter: 'Inter', sans-serif;
   --font-family-montserrat: 'Montserrat', sans-serif; 
 
@@ -76,28 +74,41 @@ a {
   color: inherit;
 }
 
-.col {
-  border: 2px solid red;  
-}
-
-.row {
-  border: 4px solid rgb(0, 30, 255);
-}
-
-.container, .container-fluid{
-  border: 6px solid green;
-}
-
 .font-italic { 
   font-style: italic;
 }
 
+.navbar {
+  background-color: var(--color-white);
+}
+
 .navi-small-text {
-font-family: var(--font-family-inter);
-font-size: 12px;
-font-weight: 400;
-line-height: 150%;
-letter-spacing: -0.12px;
+  font-family: var(--font-family-inter);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.12px;
+}
+
+.dropdown-menu-form::after {
+  display: none;
+  margin-left: 0;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: none;
+  border-right: none;
+  border-bottom: 0;
+  border-left: none;
+}
+
+.form-search {
+  
+  width: 220px;
+  height: 30px;
+}
+
+.dropdown-menu-form-field {
+  margin-left: -50px;
 }
 
 .green-text {
@@ -112,9 +123,25 @@ letter-spacing: -0.12px;
   width: 1262px;
 }
 
+.navbar-brand img {
+  width: 114.368px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.nav-link, .dropdown-item {
+  color: var(--color-black, #111);
+  font-family: var(--font-family-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+  margin-right: 48px;
+}
+
 #carousel {
   height: 737px;
-  color: var(--Black, #111);
+  color: var(--color-black, #111);
 }
 
 .carousel-headline {
@@ -133,8 +160,76 @@ letter-spacing: -0.12px;
   width: 489.013px;
 }
 
+.btn-carousel-green {
+  display: flex;
+  padding: 12px 24px 14px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 200px;
+  background: var(--color-green, #1B5B31);  
+  border: none;
+  color: var(--color-light-grey, #F5F0EC);
+  text-align: center;
+  font-family: var(--font-family-inter);
+  font-size: 16px; 
+  font-weight: 400;
+  line-height: 150%; 
+}
+
+.btn-carousel-green-outline {
+  display: flex;
+  padding: 12px 22px 14px 22px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 200px;
+  border: 1px solid var(--color-green, #1B5B31);
+  color: var(--Green, #1B5B31);
+  text-align: center;
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; 
+  background-color: transparent;
+}
+
+.iconVectorDown {
+  width: 16px;
+  height: 16px;
+  margin-left:0;
+}
+
+.carousel-buttons-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.photo-slider {
+  display: block;
+  position: relative;
+}
+
+.carousel-menu {
+  display: flex;
+  padding: 24px 32px;
+  width: 192px;
+  height: 96.00001px;
+  background-color: var(--color-grey);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-control-prev {
+padding-left: 32px;
+}
+
+.carousel-control-next {
+  padding-right: 32px;
+}
+
 #service {
-  height: 939px;
+  background-color: var(--color-grey);
 }
 
 .service-headline {
@@ -143,6 +238,7 @@ letter-spacing: -0.12px;
   font-weight: 500;
   line-height: 115%;
   letter-spacing: -1.44px;
+  margin-bottom: 32px;
 }
 
 .service-headline :last-child{
@@ -158,8 +254,74 @@ letter-spacing: -0.12px;
   width: 709px;
 }
 
+.btn-card {
+  display: flex;
+  padding-bottom: 0px;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-green, #1B5B31);
+  text-align: center;
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  border-bottom: 1px solid var(--color-green, #1B5B31);
+}
+
+.card {
+  display: flex;
+  width: 378px;
+  height: 370px;
+  padding: 48px 40px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 28px;
+  background-color: var(--color-white, #FFF) !;
+}
+.card-img-top{
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+}
+.card-title{
+  color: var(--color-black, #111);
+  font-family: var(--font-family-montserrat);
+  font-size: 28px; 
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: -1.4px;
+  padding-bottom: 12px;
+}
+
+.card-text{
+  color: var(--color-black, #111);
+  font-family: var(--font-family-inter);
+  font-size: 14px;  
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+}
+
+.arrowRightIcon, .iconWhiteArrowRight, .iconArrowDownBlack {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.iconWhiteArrowRight {
+  margin-left: 8px;
+}
+
+.iconArrowDownBlack {
+  margin-left: 4px;
+  margin-top: -5px;
+}
+
 #about {
   height: 720px;
+  background-color: var(--color-green);
   color: var(--color-light-grey, #F5F0EC);
 }
 
@@ -207,13 +369,50 @@ letter-spacing: -0.12px;
 }
 
 #portfolio {
-  height: 1824px;
+  display: flex;
+  width: 1440px;
+  padding: 0 0px 44px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 96px;
+  background: var(--color-beige, #DCC1AB);
+  position: relative;
+  z-index: -1;
+}
+
+.portfolio-headline{
+  color: var(--color-black, #111);
+  font-family: var(--font-family-montserrat);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: -1.44px;
+}
+
+.btn-portfolio {
+  display: inline-flex;
+  padding: 12px 22px 14px 22px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 200px;
+  border: 1px solid var(--color-black, #111);
+  color: var(--color-black, #111);
+  text-align: center;
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: transparent;
+}
+
+#macy-container img {
+  position: absolute;
 }
 
 #instagram {    
   height: 478px;
-  color: var(--color-light-grey, #F5F0EC);
-  
+  color: var(--color-light-grey, #F5F0EC);  
 }
 
 .instagram-text {   
@@ -223,7 +422,6 @@ letter-spacing: -0.12px;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -2px;
-
 }
 
 .instagram-button { 
@@ -254,22 +452,43 @@ letter-spacing: -0.12px;
 }
 
 #footer {
+  font-family: var(--font-family-inter);
   height: 499px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--color-light-grey, #F5F0EC);
-  background-color: var(--color-black, #111);
+  background-color: var(--color-black, #111);  
+  font-weight: 400;
+  line-height: 150%;
+  padding: 80px 0;
 }
 
 #footer button {
   display: flex;
-  padding: 12px 24px 14px 24px;
+  padding: 12px 24px 14px 24px;  
   align-items: center;
   gap: 10px;
   border-radius: 200px;
   background: var(--color-green, #1B5B31);
   color: var(--color-light-grey, #F5F0EC);
   text-align: center;
-  font-family: var(--font-family-inter);
   font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
+}
+
+.footer-text { 
+  font-size: 16px;
+  letter-spacing: -0.16px;
+}
+
+.footer-link {
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  margin-right: 48px;
+}
+
+.brand-footer-img {
+  width: 113px;
+  height: 23px;
 }

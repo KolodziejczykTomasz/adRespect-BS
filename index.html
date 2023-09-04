@@ -8,25 +8,24 @@
     
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-  
+
 </head>
-<body class="mx-auto shadow bg-white" >
+<body class="mx-auto" >
 
   <!-- ======= Header ======= -->
   
   <header id="header" class="h-100">
-    <div class="container-fluid h-100 d-flex justify-content-center">
+    <div class="container-fluid d-flex justify-content-center" style="height: 72px">
       <div class="row header-row">
         <div class="col">
-          <nav class="navbar w-100 navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar w-100 navbar-expand-lg">
             <a class="navbar-brand" href="#">
-              <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-              Bootstrap
+              <img src="./assets/img/giarddesign.svg" alt="Logo" class="d-inline-block align-text-top">           
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>          
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end w-100" id="navbarSupportedContent">
               <ul class="navbar-nav" >                
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,19 +46,19 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Kontakt</a>
-                </li>                
-              </ul>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  szukaj
+                </li> 
+                <li class="nav-item dropdown nav-search">
+                <a class="nav-link dropdown-toggle dropdown-menu-form" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/img/Icon 01.svg" alt=""/>
                 </a>
-                <div class="dropdown-menu">
-                  <form class="d-flex" role="search">
+                <div class="dropdown-menu dropdown-menu-form-field">
+                  <form class="d-flex form-search" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                   </form>
                 </div>
-              </li>   
+              </li>                 
+              </ul>              
             </div>
           </nav> 
         </div>
@@ -71,40 +70,48 @@
     <!-- ======= Carousel Section ======= -->
 
       <section id="carousel" class="d-flex align-items-center">
-        <div class="container-fluid h-100">
-          <div class="row h-100">
+        <div class="container-fluid">
+          <div class="row ">
             <div class="col px-0">
-              <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
-                <div class="carousel-inner h-100">
-                  <div class="carousel-item active h-100">
-                    <div class="row h-100 ">
-                      <div class="col col-lg-6 px-0 h-100 d-flex align-items-center">
-                        <div class="row d-flex flex-column">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col px-0 d-flex align-items-center justify-content-end" style="background-color: var(--color-beige); width: 688px">
+                        <div class="row d-flex flex-column " style="padding-right: 64px; width: 599px">
                           <div class="carousel-headline" style="padding-bottom: 44px;">Nowoczesna 
                           <span class=" d-block">aranżacja</span>
                           <span>Twojego ogrodu </span></div>
                           <p class="carousel-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                           <div class="row w-100" style="padding-top: 72px;">
-                            <button class="btn btn-success">Skontaktuj się z nami</button>
-                            <button class="btn btn-outline-success ">Zobacz nasze realizacje</button>
+                            <div class="d-flex carousel-buttons-wrapper">
+                              <button class="btn-carousel-green ">Skontaktuj się z nami</button>
+                            <button class="btn-carousel-green-outline">Zobacz nasze realizacje <img src="./assets/img/Vectordown.svg" class="iconVectorDown" alt="" /></button>
+                            </div>                           
                           </div>
                         </div>                        
                       </div>
-                      <div class="col col-lg-6 px-0 h-100">
-                        <img class="d-block w-100" src="https://placehold.co/400" alt="First slide">
+                      <div class="col px-0 " style="width: 688px;">
+                        <img class="d-block w-100" src="./assets/img/Photoslider.png" alt="First slide">
                       </div>
                     </div>           
-                  </div>        
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                  </div> 
+
+
+               
+                 <div class="carousel-menu">
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"><img src="./assets/img/ArrowLeft.svg" alt=""></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"><img src="./assets/img/ArrowRight.svg" alt=""/></span>
+                  </a>
               </div>   
+              </div>             
             </div>
           </div>
         </div>
@@ -116,38 +123,51 @@
     <!-- ======= Service Section ======= -->
 
       <section id="service" class="d-flex align-items-center">
-        <div class="container-fluid h-100">
-          <div class="row">
-            <div class="col">
-              <span>oferta</span>
+        <div class="container-fluid">
+          <div class="row" style="padding: 120px 0 96px 0; width: 1040px; margin: 0 auto; height: 409px">
+            <div class="col d-flex flex-column">
+              <span class="navi-small-text green-text">oferta</span>
               <p class="service-headline">Działamy <span class="font-italic">kompleksowo</span></p>
               <p class="service-text">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
             </div>
           </div>
           <div class="row">
-            <div class="col w-100 d-flex justify-content-around ">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col w-100 d-flex justify-content-around " style="margin-bottom: 160px;">
+              <div class="card" >
+                <div>
+                  <img src="./assets/img/Iconpencil.svg" class="card-img-top" alt="...">
+                </div>                
                 <div class="card-body">
                   <h5 class="card-title">Projekty</h5>
                   <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-                  <a href="#" class="btn btn-primary">Dowiedz się więcej</a>
+                 
+                </div>
+                <div>
+                  <a href="#" class="btn-card ">Dowiedz się więcej <img src="./assets/img/arrowRightGreen.svg" class="arrowRightIcon"alt=""/></a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card">
+                <div>
+                  <img src="./assets/img/Iconeye.svg" class="card-img-top d-block" alt="...">
+                </div>                
                 <div class="card-body">
                   <h5 class="card-title">Wizualizacje</h5>
-                  <p class="card-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-                  <a href="#" class="btn btn-primary">Dowiedz się więcej</a>
+                  <p class="card-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>                  
+                </div>
+                <div>
+                  <a href="#" class="btn-card ">Dowiedz się więcej <img src="./assets/img/arrowRightGreen.svg" class="arrowRightIcon"alt=""/></a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card" >
+                <div>
+                  <img src="./assets/img/Iconstar.svg" class="card-img-top" alt="...">
+                </div>                
                 <div class="card-body">
                   <h5 class="card-title">Realizacje</h5>
-                  <p class="card-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
-                  <a href="#" class="btn btn-primary">Zobacz nasze realizacje</a>
+                  <p class="card-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>                  
+                </div>
+                <div>
+                  <a href="#" class="btn-card">Zobacz nasze realizacje <img src="./assets/img/arrowRightGreen.svg" class="arrowRightIcon"alt=""/></a>
                 </div>
               </div>
             </div>
@@ -158,20 +178,20 @@
       
      <!-- ======= About Section ======= -->
 
-      <section id="about" class="d-flex align-items-center">
+      <section id="about" class="d-flex align-items-center" style="width: 1440px;">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 bg-warning p-0 m-0" >
-              <img src="https://placehold.co/688x720" alt="" class="w-100 h-100"/>
+          <div class="row " >
+            <div class="col bg-warning p-0 m-0 h-100"  style="width: 688px;">
+              <img src="./assets/img/Photoabout.png" alt="" class="w-100"/>
             </div>
-            <div class="col-lg-6 p-0 m-0 d-flex align-items-center" style="background-color: var(--color-green);">
-              <div class="row d-flex ">
-                <span class="navi-small-text">O firmie</span>
+            <div class="col p-0 m-0 d-flex align-items-center justify-content-end" style="background-color: var(--color-green); width: 752px;">
+              <div class="row d-flex " style="width: 596px;">
+                <span class="navi-small-text" style="padding-bottom: 16px;">O firmie</span>
               <p class="about-headline"><span class="d-block">Tworzymy</span>
                 <span>z </span><span class="font-italic">pasją</span></p>
               <p class="about-text">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
               <div class="d-flex justify-content-start ">
-                <button class="about-btn">Poznaj nas bliżej</button>
+                <button class="about-btn">Poznaj nas bliżej <img src="./assets/img/VectorwhiteArrowRight.svg" class="iconWhiteArrowRight" alt=""/></button>
               </div>
               </div>
               
@@ -182,15 +202,29 @@
     <!-- ======= Portfolio Section ======= -->
 
       <section id="portfolio" class="d-flex align-items-center">
-        <div class="container-fluid h-100">
-          <div class="row h-100">
-            <div class="col" style="padding-top: 120px;">
+        <div class="container-fluid" style="height: 1716px;">
+          <div class="row" style="height: 305px;">
+            <div class="col" style="padding-top: 120px; padding-left: 160px;">
               <span class="navi-small-text green-text" style="padding-bottom: 16px;">Realizacje</span>
-              <p>Nasze projekty</p>
+              <p class="portfolio-headline">Nasze <span class="font-italic">projekty</span></p>
             </div>
           </div>
-          <div class="row ">
-            <div class="col">galeria</div>
+          <div class="row" style="height: 1411px">
+              <div id="macy-container" class="col-flex" style="height: 1300px">
+                  <img src="./assets/img/gallery-png/1.png" alt=""/>
+                  <img src="./assets/img/gallery-png/2.png" alt=""/>
+                  <img src="./assets/img/gallery-png/3.png" alt=""/>
+                  <img src="./assets/img/gallery-png/4.png" alt=""/>
+                  <img src="./assets/img/gallery-png/5.png" alt=""/>
+                  <img src="./assets/img/gallery-png/6.png" alt=""/>
+                  <img src="./assets/img/gallery-png/7.png" alt=""/>
+                  <img src="./assets/img/gallery-png/8.png" alt=""/>
+                  <img src="./assets/img/gallery-png/9.png" alt=""/>
+              </div>
+              <div class="d-flex"  style="align-items: end; justify-content: center; margin-bottom: 45.5px;">
+                <button class="btn-portfolio w-auto d-block">Rozwiń <img src="./assets/img/Vectordownblack.svg" class="iconArrowDownBlack" alt="" /></button>
+              </div>  
+            
           </div>
         </div>
       </section><!-- End Portfolio -->  
@@ -219,42 +253,60 @@
 
     <!-- ======= Footer Section ======= -->
 
-  <footer id="footer" class="d-flex align-items-center">
-    <div class="container-fluid h-100">
-      <div class="row h-100">
-        <div class="col">
-          <div class="row">
-            <div class="col">image</div>
-            <div class="col d-flex">
-              <p>Daj znać, co możemy dla Ciebie zrobić!</p>
-              <button class="btn">Skontaktuj się z nami</button>
+  <footer id="footer">
+    <div class="container d-flex  flex-column footer-wrapper" style="width: 1040px;">
+      <div class="row d-flex">
+        <div class="col" >
+            <div class="row ">
+              <div class="col-lg-4 d-flex  d-flex justify-content-start align-items-center">
+                <img src="./assets/img/giarddesignlight-footer.svg" alt="" />
+              </div>
+              <div class="col-lg-8 d-flex p-0 d-flex justify-content-end align-items-center">
+                <p class="footer-text d-flex justify-content-center align-items-center" style="margin-right: 24px;">Daj znać, co możemy dla Ciebie zrobić!</p>
+                <button class="btn">Skontaktuj się z nami</button>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col border border-bottom-0" ></div>
-          </div>
-          <div class="row">
-            <div class="col d-flex">
-              <p>Kontakt</p>
-              <p>Instagram</p>
-              <p>Facebook</p>
-              <p>LinkedIn</p>
+            <div class="row">
+            <div class="col border border-0 border-bottom" style="padding-bottom:62px;" ></div>
             </div>
-            <div class="col d-flex">
-              <p>000-000-000</p>
-              <p>giarddesign@kontakt.pl</p>
+            <div class="row" style="padding-top:62px;" >
+              <div class="col d-flex">
+                <p class="footer-link">Kontakt</p>
+                <p class="footer-link">Instagram</p>
+                <p class="footer-link">Facebook</p>
+                <p class="footer-link">LinkedIn</p>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <p class="footer-link">000-000-000</p>
+                <p class="footer-link" style="margin-right: 0;">giarddesign@kontakt.pl</p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col">Prawa zastrzeżone © 2022</div>
-            <div class="col">made by</div>
-          </div>
+            <div class="row d-flex" style="padding-top: 120px;">
+              <div class="col footer-text " >Prawa zastrzeżone © 2022</div>
+              <div class="col footer-text " style="text-align: right;">made by <img src="./assets/img/logo-full-light.svg" class="brand-footer-img" alt="" /></div>
+            </div>
         </div>
       </div>
     </div>    
   </footer> <!-- End Footer -->  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+  <script>
+ var macy = Macy({
+    container: '#macy-container',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 24,
+    columns: 3,
+    breakAt: {
+        1200: 3,
+        940: 3,
+        520: 2,
+        400: 1
+    }
+});
+  </script>
 </body>
 </html>
