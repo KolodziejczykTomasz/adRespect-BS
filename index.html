@@ -178,10 +178,10 @@
       
      <!-- ======= About Section ======= -->
 
-      <section id="about" class="d-flex align-items-center" style="width: 1440px;">
-        <div class="container-fluid">
+      <section id="about" class="d-flex align-items-center" style="width: 1440px;position: relative;">
+        <div class="container-fluid"style="display: block; left: 0;  top:0; position:absolute">
           <div class="row " >
-            <div class="col bg-warning p-0 m-0 h-100"  style="width: 688px;">
+            <div class="col bg-warning p-0 m-0 h-100"  style="width: 688px;" >
               <img src="./assets/img/Photoabout.png" alt="" class="w-100"/>
             </div>
             <div class="col p-0 m-0 d-flex align-items-center justify-content-end" style="background-color: var(--color-green); width: 752px;">
@@ -201,30 +201,31 @@
 
     <!-- ======= Portfolio Section ======= -->
 
-      <section id="portfolio" class="d-flex align-items-center">
-        <div class="container-fluid" style="height: 1716px;">
+      <section id="portfolio" class="d-flex align-items-center  z-index: 0;">
+        <div class="container-fluid" style="height: 1716px; z-index: 0;">            
           <div class="row" style="height: 305px;">
             <div class="col" style="padding-top: 120px; padding-left: 160px;">
               <span class="navi-small-text green-text" style="padding-bottom: 16px;">Realizacje</span>
               <p class="portfolio-headline">Nasze <span class="font-italic">projekty</span></p>
             </div>
-          </div>
-          <div class="row" style="height: 1411px">
-              <div id="macy-container" class="col-flex" style="height: 1300px">
-                  <img src="./assets/img/gallery-png/1.png" alt=""/>
-                  <img src="./assets/img/gallery-png/2.png" alt=""/>
-                  <img src="./assets/img/gallery-png/3.png" alt=""/>
-                  <img src="./assets/img/gallery-png/4.png" alt=""/>
-                  <img src="./assets/img/gallery-png/5.png" alt=""/>
-                  <img src="./assets/img/gallery-png/6.png" alt=""/>
-                  <img src="./assets/img/gallery-png/7.png" alt=""/>
-                  <img src="./assets/img/gallery-png/8.png" alt=""/>
-                  <img src="./assets/img/gallery-png/9.png" alt=""/>
-              </div>
-              <div class="d-flex"  style="align-items: end; justify-content: center; margin-bottom: 45.5px;">
-                <button class="btn-portfolio w-auto d-block">Rozwiń <img src="./assets/img/Vectordownblack.svg" class="iconArrowDownBlack" alt="" /></button>
-              </div>  
-            
+          </div>         
+            <div class="row" style="height: 1440px; overflow: hidden;">
+              <div class="portfolio-background-gradient p-0">             
+                <div id="macy-container" class="col-flex" style="height: 1300px; ">                
+                    <img class="gallery-item" src="./assets/img/gallery-png/1.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/2.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/3.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/4.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/5.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/6.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/7.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/8.png" alt=""/>
+                    <img class="gallery-item" src="./assets/img/gallery-png/9.png" alt=""/>
+                </div>
+                <div class="d-flex"  style="align-items: end; border: 4px solid green;justify-content: center; margin-bottom: 45.5px; ">
+                  <button class="btn-portfolio w-auto d-block" style="position: absolute; z-index: 999999">Rozwiń <img src="./assets/img/Vectordownblack.svg" class="iconArrowDownBlack" alt="" /></button>
+                </div>
+            </div>
           </div>
         </div>
       </section><!-- End Portfolio -->  
@@ -293,20 +294,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
-  <script>
- var macy = Macy({
-    container: '#macy-container',
-    trueOrder: false,
-    waitForImages: false,
-    margin: 24,
-    columns: 3,
-    breakAt: {
-        1200: 3,
-        940: 3,
-        520: 2,
-        400: 1
-    }
-});
-  </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    
 </body>
 </html>
