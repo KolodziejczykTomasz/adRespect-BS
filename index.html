@@ -73,16 +73,18 @@
   </header>
   <!-- End Header -->
 
+  <div class="layout container-fluid">
+    <main id="main">
+
+
     <!-- ======= Carousel Section ======= -->
 
-      <section id="carousel" class="d-flex align-items-center">
+      <section id="carousel" class="container-fluid  d-flex align-items-center justify-content-center">
         <div class="container-fluid">
           <div class="row ">
             <div class="col px-0">
-              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">                
                 <div class="carousel-inner">
-
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col px-0 d-flex align-items-center justify-content-end" style="background-color: var(--color-beige); width: 688px">
@@ -103,10 +105,7 @@
                         <img class="d-block w-100" src="./assets/img/Photoslider.png" alt="First slide">
                       </div>
                     </div>           
-                  </div> 
-
-
-               
+                  </div>                
                  <div class="carousel-menu">
                   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -124,11 +123,11 @@
         
       </section> <!-- End Carousel -->
 
-  <main id="main">
+
 
     <!-- ======= Service Section ======= -->
 
-      <section id="service" class="d-flex align-items-center">
+      <section id="service" class="container-fluid d-flex justify-content-center align-items-center">
         <div class="container-fluid">
           <div class="row" style="padding: 120px 0 96px 0; width: 1040px; margin: 0 auto; height: 409px" data-aos="fade-up" data-aos-delay="200">
             <div class="col d-flex flex-column">
@@ -178,36 +177,36 @@
               </div>
             </div>
           </div>
-          </div>
-        </div>
+          </div>       
       </section> <!-- End Service -->
       
      <!-- ======= About Section ======= -->
 
-      <section id="about" class="d-flex align-items-center" style="width: 1440px; position: relative;">
-        <div class="container-fluid"style="display: block; left: 0;  top:0; position:absolute">
-          <div class="row " >
-            <div class="col bg-warning p-0 m-0 h-100"  style="width: 688px;" >
-              <img src="./assets/img/Photoabout.png" alt="" class="w-100"/>
-            </div>
-            <div class="col p-0 m-0 d-flex align-items-center justify-content-end" style="background-color: var(--color-green); width: 752px;">
-              <div class="row d-flex " style="width: 596px;">
+      <section id="about" class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="container-fluid d-flex justify-content-center align-items-center "style="display: block; width: 1440px; height: 720px; background-color: var(--color-green);">
+          <div class="row about-wrapper" style="height: 720px; min-width: 688px">
+            <figure class="col p-0 m-0 about-figure"  style="min-width: 688px; height: 100%; " >
+              <img src="./assets/img/Photoabout.png" alt="" class="about-img img-fluid"/>
+            </figure>
+            <div class="col p-0 m-0 d-flex align-items-center justify-content-end " style="background-color: var(--color-green); width: 752px;">
+              <div class="row d-flex" style="width: 596px;">
                 <span class="navi-small-text" style="padding-bottom: 16px;">O firmie</span>
               <p class="about-headline"><span class="d-block">Tworzymy</span>
                 <span>z </span><span class="font-italic">pasją</span></p>
               <p class="about-text" data-aos="fade-up" data-aos-delay="100">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
               <div class="d-flex justify-content-start ">
-                <button class="about-btn">Poznaj nas bliżej <img src="./assets/img/VectorwhiteArrowRight.svg" class="iconWhiteArrowRight" alt=""/></button>
+                <button class="about-btn">Poznaj nas bliżej 
+                  <img src="./assets/img/VectorwhiteArrowRight.svg" class="iconWhiteArrowRight" alt=""/>
+                </button>
               </div>
-              </div>
-              
+              </div>              
             </div>
         </div>
       </section> <!-- End About -->
 
     <!-- ======= Portfolio Section ======= -->
 
-      <section id="portfolio" class="d-flex align-items-center  z-index: 0;">
+      <section id="portfolio" class="container-fluid d-flex justify-content-center align-items-center">
         <div class="container-fluid" style="height: 1716px; z-index: 0;">            
           <div class="row" style="height: 305px;">
             <div class="col" style="padding-top: 120px; padding-left: 160px;">
@@ -298,7 +297,7 @@
      <div id="preloader" class=""></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center" ><i class="bi bi-arrow-up-short " style="font-size: 32px "></i></a> 
   </footer> <!-- End Footer --> 
-
+</div>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

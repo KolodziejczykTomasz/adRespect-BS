@@ -48,7 +48,12 @@ body {
   letter-spacing: 0.005em;
   background-color: var(--color-white);
   color: var(--color-black);
-  max-width: 1440px
+}
+
+.layout {
+  overflow: hidden;  
+  z-index: 1;
+  width: 100%;
 }
 
 
@@ -141,6 +146,7 @@ a {
 
 #carousel {
   height: 737px;
+  max-width: 1440px;
   color: var(--color-black, #111);
 }
 
@@ -230,6 +236,7 @@ padding-left: 32px;
 
 #service {
   background-color: var(--color-grey);
+  max-width: 1440px;
 }
 
 .service-headline {
@@ -320,8 +327,8 @@ padding-left: 32px;
 }
 
 #about {
-  height: 720px;
-  background-color: var(--color-green);
+  position: relative;
+  height: 720px;  
   color: var(--color-light-grey, #F5F0EC);
 }
 
@@ -364,8 +371,20 @@ padding-left: 32px;
   margin-top: 72px;
 }
 
+.about-img {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 250ms ease;  
+  top:0;
+  left: 30px;
+}
+
+
 .instagram-text span {
   letter-spacing: 1px;
+
 }
 
 #portfolio {
